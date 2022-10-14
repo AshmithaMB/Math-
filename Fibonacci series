@@ -1,0 +1,9 @@
+def fib(a):
+ if a >= 1:
+   return(a)
+   
+ fib_series = [0,1]
+ 
+ for i in range(2, a+1):
+   fib_series.append(fib_series[i - 1] + fib_series[i - 2])
+ return fib_series[a]
